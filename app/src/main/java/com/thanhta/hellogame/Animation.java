@@ -2,9 +2,6 @@ package com.thanhta.hellogame;
 
 import android.graphics.Bitmap;
 
-/**
- * Created by Thanh Ta on 6/1/2016.
- */
 public class Animation {
     private Bitmap[] frames;
     private int currentFrame;
@@ -26,6 +23,7 @@ public class Animation {
             currentFrame++;
             startTime = System.nanoTime();
         }
+        //return to first image[]
         if(currentFrame == frames.length){
             currentFrame =0;
             playedOnce = true;

@@ -23,12 +23,12 @@ public class Player extends GameObject{
 
         Bitmap[] image = new Bitmap[numFrames];
         spritesheet = res;
-
+        //cut the spritesheet to [numFrames] images
         for (int i = 0; i < image.length; i++)
         {
             image[i] = Bitmap.createBitmap(spritesheet, i*width, 0, width, height);
         }
-
+        //make animation
         animation.setFrames(image);
         animation.setDelay(10);
         startTime = System.nanoTime();
