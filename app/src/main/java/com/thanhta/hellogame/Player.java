@@ -55,9 +55,8 @@ public class Player extends GameObject{
             dy = (int)(dya+=1.1);
         }
 
-        if(dy>14)dy = 14;
-        if(dy<-14)dy = -14;
-
+        if(dy>14)dy= 14;
+        if(dy<-14)dy= -14;
         y += dy*2;
         dy = 0;
     }
